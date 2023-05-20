@@ -1,3 +1,2 @@
-0 normal
-1 CA
-2 TB
+0 Normal
+1 Abnormal

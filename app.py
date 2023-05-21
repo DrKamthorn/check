@@ -13,7 +13,7 @@ if uploaded_file is not None:
     st.image(image, caption='Uploaded.', use_column_width=True)
     st.write("")
     st.write("Classifying...")
-    label = teachable_machine_classification(image, 'keras_Model.h5')
+    label = teachable_machine_classification(image, 'keras_model.h5')
     if label == 0:
         st.write("ไม่พบสิ่งผิดปกติ")
         #st.write("สงสัยสิ่งผิดปกติ แนะนำสืบค้นเพิ่มเติม")

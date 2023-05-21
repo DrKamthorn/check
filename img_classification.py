@@ -5,7 +5,7 @@ import numpy as np
 
 def teachable_machine_classification(img, weights_file):
     # Load the model
-    model = keras.models.load_model(keras_model.h5)
+    model = keras.models.load_model(weights_file)
 
     # Create the array of the right shape to feed into the keras model
     data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
